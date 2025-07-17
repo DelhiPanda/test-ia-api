@@ -1,7 +1,7 @@
 import { Controller, Get, Post, Body, Param, UsePipes, ValidationPipe } from '@nestjs/common';
 import { CreateProductDto } from '../dto/create-product.dto';
 import { Product } from '../schemas/product.schema';
-import { ProductsService } from 'src/services/products.service';
+import { ProductsService } from '../services/products.service';
 
 @Controller('products')
 export class ProductsController {
